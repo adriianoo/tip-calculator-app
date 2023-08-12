@@ -1,0 +1,15 @@
+@import url('https://fonts.google.com/specimen/Space+Mono');
+
+.button {
+    padding: 5px;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 5px;
+
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(183, 100%, 15%);
+
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+}
