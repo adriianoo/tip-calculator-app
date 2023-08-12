@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.scss"
 import PercentageButton from "./components/PercentageButton.js";
+import ResetButton from "./components/ResetButton.js";
 
 const App = () => {
     return (
@@ -16,40 +17,50 @@ const App = () => {
                     <div className="bill">
                         <label>Bill</label>
                         <div className="bill-input">
-                            <input type="text" name="" id="input" placeholder="0"></input>
+                            <input type="text" id="bill-input" placeholder="0"></input>
                         </div>
                     </div>
                     <div className="tips">
                         <label>Select Tip %</label>
                         <div className="tips-grid">
-                            <PercentageButton label="5%" />
-                            <PercentageButton label="10%" />
-                            <PercentageButton label="15%" />
-                            <PercentageButton label="25%" />
-                            <PercentageButton label="50%" />
+                            <PercentageButton label="5%" percentage={5} />
+                            <PercentageButton label="10%" percentage={10} />
+                            <PercentageButton label="15%" percentage={15} />
+                            <PercentageButton label="25%" percentage={25} />
+                            <PercentageButton label="50%" percentage={50} />
                             <button className="custom-button">Custom</button>
                         </div>
                     </div>
                     <div className="people">
                         <label>Number of People</label>
                         <div className="people-input">
-                            <input type="text" name="" id="input" placeholder="0"></input>
+                            <input type="text" id="people-input" placeholder="0"></input>
                         </div>
                     </div>
                 </div>
 
                 <div className="right-content">
-                    <div className="tip-amount">
-                        <h3>Tip Amount</h3>
-                        <label>/ person</label>
+
+                    <div className="wrapper">
+                        <div className="tip-amount">
+                            <h3>Tip Amount</h3>
+                            <label>/ person</label>
+                        </div>
+                        <div className="tip-amount-value">
+                            <span id="result"></span>
+                        </div>
                     </div>
-                    <div className="total">
-                        <h3>Total</h3>
-                        <label>/ person</label>
+
+                    <div className="wrapper2">
+                        <div className="total">
+                            <h3>Total</h3>
+                            <label>/ person</label>
+                        </div>
+                        <div className="total-value">
+                            <span id="total-result"></span>
+                        </div>
                     </div>
-                    <div className="reset-button">
-                        <button>RESET</button>
-                    </div>
+                    <ResetButton />
                 </div>
 
             </div>
