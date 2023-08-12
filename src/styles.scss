@@ -1,0 +1,129 @@
+@import url('https://fonts.google.com/specimen/Space+Mono');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 41%, 84%);
+
+    .logo {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        padding: 20px;
+        border-radius: 10px;
+
+        color: hsl(186, 14%, 43%);
+        background-color: hsl(0, 0%, 100%);
+
+        font-weight: 700;
+        font-family: 'Space Mono', monospace;
+
+        .left-content {
+            flex: 1;
+            padding: 20px;
+
+            .bill {
+                font-size: 12px;
+                margin-bottom: 20px;
+
+                input {
+                    padding: 5px;
+                    margin-top: 5px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: hsl(185, 41%, 84%);
+                }
+            }
+
+            .tips {
+                font-size: 12px;
+                margin-bottom: 20px;
+
+                .tips-grid {
+                    display: grid;
+                    margin-top: 5px;
+                    grid-template-columns: repeat(3, 55px);
+                    grid-gap: 5px;
+
+                    .custom-button {
+                        border: none;
+                        border-radius: 5px;
+
+                        color: hsl(186, 14%, 43%);
+                        background-color: hsl(185, 41%, 84%);
+
+                        font-weight: 700;
+                        font-family: 'Space Mono', monospace;
+
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .people {
+                font-size: 12px;
+
+                input {
+                    padding: 5px;
+                    margin-top: 5px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: hsl(185, 41%, 84%);
+                }
+            }
+        }
+
+        .right-content {
+            flex: 1;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: hsl(183, 100%, 15%);
+
+            @mixin amount {
+                h3 {
+                    margin: 2px;
+                    font-size: 12px;
+                    color: hsl(0, 0%, 100%);
+                }
+
+                label {
+                    font-size: 10px;
+                }
+            }
+
+            .tip-amount {
+                margin-bottom: 40px;
+                @include amount;
+            }
+
+            .total {
+                @include amount;
+            }
+
+            .reset-button {
+                margin-top: 70%;
+
+                button {
+                    font-size: 10px;
+                    height: 10%;
+                    width: 100%;
+
+                    border: none;
+                    border-radius: 2px;
+
+                    color: hsl(183, 100%, 15%);
+                    background-color: hsl(186, 14%, 43%);
+
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
