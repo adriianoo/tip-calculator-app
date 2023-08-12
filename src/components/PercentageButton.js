@@ -1,5 +1,5 @@
 import React from "react";
-import "./PercentageButton.css"
+import "./PercentageButton.scss"
 
 const PercentageButton = (props) => {
     return (

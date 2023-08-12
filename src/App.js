@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.scss"
 import PercentageButton from "./components/PercentageButton.js";
 
 const App = () => {
