@@ -14,6 +14,7 @@ const calculate = (percentage) => {
         people_Input_Element.style.backgroundColor = "hsl(0, 41%, 84%)";
     } else {
         people_Input_Element.style.border = "none";
+        people_Input_Element.style.backgroundColor = "hsl(185, 41%, 84%)";
 
         let result = (inputValue * (percentage / 100) / inputValue2);
         resultElement.textContent = "$" + result;
