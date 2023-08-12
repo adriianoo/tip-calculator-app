@@ -21,15 +21,13 @@ const App = () => {
                     </div>
                     <div className="tips">
                         <label>Select Tip %</label>
-                        <div className="tips-first-row">
+                        <div className="tips-grid">
                             <PercentageButton label="5%" />
                             <PercentageButton label="10%" />
                             <PercentageButton label="15%" />
-                        </div>
-                        <div className="tips-second-row">
                             <PercentageButton label="25%" />
                             <PercentageButton label="50%" />
-                            <PercentageButton label="Custom" />
+                            <button className="custom-button">Custom</button>
                         </div>
                     </div>
                     <div className="people">
@@ -42,13 +40,15 @@ const App = () => {
 
                 <div className="right-content">
                     <div className="tip-amount">
-                        
+                        <h3>Tip Amount</h3>
+                        <label>/ person</label>
                     </div>
                     <div className="total">
-
+                        <h3>Total</h3>
+                        <label>/ person</label>
                     </div>
                     <div className="reset-button">
-
+                        <button>RESET</button>
                     </div>
                 </div>
 
