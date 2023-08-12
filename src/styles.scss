@@ -21,6 +21,7 @@ body {
 
         color: hsl(186, 14%, 43%);
         background-color: hsl(0, 0%, 100%);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
         font-weight: 700;
         font-family: 'Space Mono', monospace;
@@ -29,16 +30,22 @@ body {
             flex: 1;
             padding: 20px;
 
+            @mixin input {
+                padding: 5px;
+                margin-top: 5px;
+                text-align: right;
+                border: none;
+                border-radius: 5px;
+                background-color: hsl(185, 41%, 84%);
+                cursor: pointer;
+            }
+
             .bill {
                 font-size: 12px;
                 margin-bottom: 20px;
 
                 input {
-                    padding: 5px;
-                    margin-top: 5px;
-                    border: none;
-                    border-radius: 5px;
-                    background-color: hsl(185, 41%, 84%);
+                    @include input;
                 }
             }
 
@@ -71,11 +78,7 @@ body {
                 font-size: 12px;
 
                 input {
-                    padding: 5px;
-                    margin-top: 5px;
-                    border: none;
-                    border-radius: 5px;
-                    background-color: hsl(185, 41%, 84%);
+                    @include input;
                 }
             }
         }
@@ -98,30 +101,37 @@ body {
                 }
             }
 
-            .tip-amount {
+            @mixin amount-value {
+                flex: 1;
+                padding-top: 5px;
+                font-size: 24px;
+                text-align: right;
+            }
+
+            .wrapper {
+                display: flex;
+                justify-content: space-between;
                 margin-bottom: 40px;
-                @include amount;
+
+                .tip-amount {
+                    @include amount;
+                }
+
+                .tip-amount-value {
+                    @include amount-value;
+                }
             }
 
-            .total {
-                @include amount;
-            }
+            .wrapper2 {
+                display: flex;
+                justify-content: space-between;
 
-            .reset-button {
-                margin-top: 70%;
+                .total {
+                    @include amount;
+                }
 
-                button {
-                    font-size: 10px;
-                    height: 10%;
-                    width: 100%;
-
-                    border: none;
-                    border-radius: 2px;
-
-                    color: hsl(183, 100%, 15%);
-                    background-color: hsl(186, 14%, 43%);
-
-                    cursor: pointer;
+                .total-value {
+                    @include amount-value;
                 }
             }
         }
