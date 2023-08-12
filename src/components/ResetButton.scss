@@ -1,0 +1,23 @@
+@import url('https://fonts.google.com/specimen/Space+Mono');
+
+.reset-button {
+    font-size: 10px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+
+    height: 10%;
+    width: 100%;
+    margin-top: 75%;
+
+    border: none;
+    border-radius: 2px;
+
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(186, 14%, 43%);
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: hsl(185, 41%, 84%);
+    }
+}
