@@ -9,9 +9,18 @@ const calculate = (percentage) => {
     let resultElement = document.getElementById('result');
     let resultElement2 = document.getElementById('total-result');
 
-    if(inputValue2 == 0) {
+    // if-statements for validation
+    if (inputValue2 == 0 && inputValue == 0) {
         people_Input_Element.style.border = "1px solid red";
         people_Input_Element.style.backgroundColor = "hsl(0, 41%, 84%)";
+        bill_Input_Element.style.border = "1px solid red";
+        bill_Input_Element.style.backgroundColor = "hsl(0, 41%, 84%)";
+    } else if (inputValue2 == 0) {
+        people_Input_Element.style.border = "1px solid red";
+        people_Input_Element.style.backgroundColor = "hsl(0, 41%, 84%)";
+    } else if (inputValue == 0) {
+        bill_Input_Element.style.border = "1px solid red";
+        bill_Input_Element.style.backgroundColor = "hsl(0, 41%, 84%)";
     } else {
         people_Input_Element.style.border = "none";
         people_Input_Element.style.backgroundColor = "hsl(185, 41%, 84%)";
