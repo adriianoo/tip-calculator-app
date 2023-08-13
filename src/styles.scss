@@ -34,6 +34,7 @@ body {
                 padding: 5px;
                 margin-top: 5px;
                 text-align: right;
+                font-family: 'Space Mono', monospace;
                 border: none;
                 border-radius: 5px;
                 background-color: hsl(185, 41%, 84%);
@@ -58,19 +59,6 @@ body {
                     margin-top: 5px;
                     grid-template-columns: repeat(3, 55px);
                     grid-gap: 5px;
-
-                    .custom-button {
-                        border: none;
-                        border-radius: 5px;
-
-                        color: hsl(186, 14%, 43%);
-                        background-color: hsl(185, 41%, 84%);
-
-                        font-weight: 700;
-                        font-family: 'Space Mono', monospace;
-
-                        cursor: pointer;
-                    }
                 }
             }
 

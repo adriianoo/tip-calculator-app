@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.scss"
 import PercentageButton from "./components/PercentageButton.js";
 import ResetButton from "./components/ResetButton.js";
+import CustomButton from "./components/CustomInput.js";
 
 const App = () => {
     return (
@@ -28,7 +29,7 @@ const App = () => {
                             <PercentageButton label="15%" percentage={15} />
                             <PercentageButton label="25%" percentage={25} />
                             <PercentageButton label="50%" percentage={50} />
-                            <button className="custom-button">Custom</button>
+                            <CustomButton />
                         </div>
                     </div>
                     <div className="people">
