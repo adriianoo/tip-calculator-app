@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [tip-calculator-app](https://bejewelled-malasada-408f25.netlify.app/public/)
 
 ## My process
 
